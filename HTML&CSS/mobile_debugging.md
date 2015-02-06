@@ -8,7 +8,7 @@ You can now access your site in your browser on your computer on port 8000: `loc
 
 ###Mobile Access
 
-To access this on your phone, your phone must be connected to the same wifi network. Go to your terminal and open a new tab. while the server is running, enter the command `ifconfig ` (you can just enter `ifconfig`...youdon't have to download the gem lolcat and use it to output the result in rainbow with `ifconfig | lolcat`, but you could...)
+To access this on your phone, your phone must be connected to the same network. Go to your terminal and open a new tab. while the server is running, enter the command `ifconfig ` (you can just enter `ifconfig`...youdon't have to download the gem lolcat and use it to output the result in rainbow with `ifconfig | lolcat`, but you could...)
 
 ![ifconfig](ifconfig.png)
 
