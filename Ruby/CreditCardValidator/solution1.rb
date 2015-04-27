@@ -48,7 +48,7 @@ class CreditCard
   attr_reader :card_number #narrowing the public interface to only what's necessary
   
   def doubled_character_array
-    card_number.to_s.chars.collect_concat.with_index do |element, index|
+    card_number.reverse.chars.collect_concat.with_index do |element, index|
       index.even? ? (element.to_i * 2).to_s.chars : element
     end
   end
