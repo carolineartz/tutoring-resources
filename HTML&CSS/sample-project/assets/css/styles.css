@@ -1,0 +1,44 @@
+.bs-callout {
+  color: rgb(51, 51, 51);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 3px 3px 3px 3px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.bs-callout-info {
+  border-left: 5px solid #4F5C7B;
+}
+
+.bs-callout-primary {
+  border-left: 5px solid #45ccd3;
+}
+
+.bs-callout-success {
+  border-left: 5px solid #7FB339;
+}
+
+.bs-callout-warning {
+  border-left: 5px solid #F3AE4C;
+}
+
+.bs-callout-danger {
+  border-left: 5px solid #CB5941;
+}
+
+a,
+a:focus,
+a:active,
+a:active:focus,
+button:focus, 
+button:active, 
+button:active:focus,
+ .btn:focus, 
+ .btn:active, 
+ .btn:active:focus {
+    outline: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}

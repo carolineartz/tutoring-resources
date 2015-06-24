@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example</title>
+  <link href='http://fonts.googleapis.com/css?family=Domine:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='assets/css/bootstrap-theme.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>Examples</h2>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-sm-4">
+          <div>
+            <a id="draggable-info" tabindex="0" class="glyphicon glyphicon-info-sign" role="button"></a>
+          </div>
+          <ul id="draggablePanelList" class="list-unstyled">
+            <li class="bs-callout bs-callout-danger panel">
+              <div class="draggable-item">You can drag this item.</div>
+            </li>
+            <li class="bs-callout bs-callout-warning panel">
+              <div class="draggable-item">You can drag this item too.</div>
+            </li>
+            <li class="bs-callout bs-callout-primary panel">
+              <div class="draggable-item">You can drag this item too.</div>
+            </li>
+            <li class="bs-callout bs-callout-info panel">
+              <div class="draggable-item">You can drag this item too.</div>
+            </li>
+            <li class="bs-callout bs-callout-success panel">
+              <div class="draggable-item">You can drag this item too.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-8">
+          <div>
+            <a id="tabs-info" tabindex="0" class="glyphicon glyphicon-info-sign" role="button"></a>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home">I Murmured By Blackbottomed Kangaroos Somewhere Congratulations Discovered Horn State Flutes If Butterfly Humpfted A In Share Stand Soft On Shoulder Nothing Came It Give Mighty Should Small Fine Do Carried Greabbed Cousins Wonderfully Anything Frequently To Indeed We Yourselves Playthings Up Our Opener</div>
+              <div role="tabpanel" class="tab-pane" id="profile">Is Afternoon Congratulations Always Goodbye By Blackbottomed Wonderfully I A Terrible Tattered On At Bad Life's Rot Run Smallest Ruckus Wonderful Soget Shouting Kangaroos Bite Thunder Can't Stopped Voices Tin Go Ned Bigger Butterfly Seen Yop Cranberry Likes Rain Mountains No Mountain Bixby Searched Weirdish Humpfed Guaranteed Cousins Nonsensical</div>
+              <div role="tabpanel" class="tab-pane" id="messages">I End A Congratulations Go Engaged Guaranteed Mother Shine Do Trouble Swift Splashing Pat Darkest Elephant's Frequently You'll 'cause Hop Chance Kangaroos' Course</div>
+              <div role="tabpanel" class="tab-pane" id="settings">Clarinets Enemies It Sneered Course Sizzle Tie Racket Yourselves Guaranteed Hullabaloo Everywhere Blackbottomed My Cranberry</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="col-sm-6">
+            <a id="appendDom" class="btn btn-block btn-primary">Add</a>
+          </div>
+          <div class="col-sm-6">
+            <a id="removeDom" class="btn btn-block btn-warning">Remove</a>
+          </div>
+          <div class="col-sm-12">
+            <div id="addStuffHere">
+              <div class="alreadyHere">I was already here</div>
+              <div class="alreadyHere">I was here too</div>
+              <div class="alreadyHere" id="willFade">I was here, but I'll <em>fade</em> out</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-3">
+          <div id="color-fade" class="panel">
+            <div class="panel-heading">
+              <h4>Changing colors through jQueryUI .animate</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- make sure you're loading your js at the bottom of your html -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- your script last -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
