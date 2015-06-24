@@ -1,12 +1,4 @@
-#Mobile Debugging & Setting Up a Local Server on OS X
-###Start the server
-In terminal, navigate to the root directory of your `github.io` site enter this command into your terminal to start you local server. Macs ship with Python so you shouldn't have to install anything.
-```
-python -m SimpleHTTPServer 8000
-```
-You can now access your site in your browser on your computer on port 8000: `localhost:8000`
-
-###Mobile Access
+#Mobile Access
 
 To access this on your phone, your phone must be connected to the same network. Go to your terminal and open a new tab. while the server is running, enter the command `ifconfig ` (you can just enter `ifconfig`...youdon't have to download the gem lolcat and use it to output the result in rainbow with `ifconfig | lolcat`, but you could...)
 
