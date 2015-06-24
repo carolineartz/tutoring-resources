@@ -51,8 +51,9 @@ $(document).ready(function() {
   // function expression to add to event listener for the add content button
   var addContent = function() {
     var insertedNode = document.createElement('div');
+    insertedNode.setAttribute('class', 'justAdded');
     var stuffToAdd = "I was just added to the DOM";
-    insertedNode.innerHTML = '<div id="justAdded">' + stuffToAdd + '</div>';
+    insertedNode.innerHTML = stuffToAdd;
     insertHere.appendChild(insertedNode);
   }
 
@@ -61,8 +62,14 @@ $(document).ready(function() {
 
   //all in one function and event listener via jquery (so much easier/faster)
   $('#removeDom').click(function() {
+      // gonna remove all the stuff that was there when the page laoded when it's clicked
       $('.alreadyHere:not(#willFade)').remove();
       $('#willFade').fadeOut('slow');
+
+      // also, if there are any of the newly added things, remove one at a time, oldest first
+      if ('.justAdded') {
+        $('.justAdded:last-of-type').remove();
+      }
     }) // end add/remove content code
 
 
