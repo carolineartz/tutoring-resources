@@ -25,7 +25,7 @@ def bakery_num(servings, favorite_food)
     servings %= TREAT_SERVINGS[food]
   end
 
-  return "You need to make #{order_quantity["pie"]} pie(s), #{order_quantity["cake"]} cake(s), and #{order_quantity["cookie"]} cookie(s)."
+  "You need to make #{order_quantity["pie"]} pie(s), #{order_quantity["cake"]} cake(s), and #{order_quantity["cookie"]} cookie(s)."
 end
 
 
