@@ -2,7 +2,7 @@
 TREAT_SERVINGS = {"pie" => 8, "cake" => 6, "cookie" => 1} #making this a constant, in order from most servings to least (that is important)
 
 def bakery_num(servings, favorite_food)
-  raise ArgumentError.new("You can't make that food") unless TREAT_SERVINGS.key?(favorite_food)
+  raise ArgumentError, "You can't make that food" unless TREAT_SERVINGS.key?(favorite_food)
 
   #instead of initializing them individually, we cna put it into a hash and easily associate with the servings hash
   order_quantity = {"pie" => 0, "cake" => 0, "cookie" => 0}
@@ -22,8 +22,7 @@ def bakery_num(servings, favorite_food)
   # so the last line in the block is asking if servings still have to be allocated
   foods.take_while do |food|
     order_quantity[food] = servings / TREAT_SERVINGS[food]
-    servings = servings % TREAT_SERVINGS[food]
-    servings > 0 
+    servings %= TREAT_SERVINGS[food]
   end
 
   return "You need to make #{order_quantity["pie"]} pie(s), #{order_quantity["cake"]} cake(s), and #{order_quantity["cookie"]} cookie(s)."
